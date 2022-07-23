@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  margin-bottom: unset;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 25px;
+}
+
+header .login-bar {
+  padding: 10px 25px;
+  background-color: #000;
+}
+header .login-bar .right-wrap .cart {
+  margin-right: 0.5rem;
+}
+header .login-bar .right-wrap .cart span {
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1;
+}
+header .login-bar .right-wrap a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+header .navbar {
+  padding: 0 25px;
+}
+header .navbar #navbarNavAltMarkup .navbar-nav .nav-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+  line-height: 1;
+  padding: 15px 0;
+  margin-left: 1.5rem;
+}
+header .navbar #navbarNavAltMarkup .navbar-nav .nav-link:first-child {
+  margin: 0;
+}
+header .navbar #navbarNavAltMarkup .navbar-nav .nav-link.active {
+  border-bottom: 1px solid #000;
+  color: #000;
+}

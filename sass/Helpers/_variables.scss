@@ -1,0 +1,62 @@
+// ----------------Text----------------
+// text-size
+$text-xs: 13px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+// font-weight
+$text-light: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+// text-color
+$text-c1-primary: #b61984;
+$text-c1-dark: #000;
+$text-c1-light: #fff;
+$text-c2-dark: rgba(0,0,0,.3);
+// ----------------Background----------------
+// bg-color
+$bg-c1-primary: #b61984;
+$bg-c1-secondary: #dcd1f3;
+$bg-c1-light: #fff;
+$bg-c1-dark: #000;
+$bg-c2-dark: rgba(0,0,0,.3);
+// ----------------Breakpoint----------------
+$sm: 576x; 
+$md: 768px; 
+$lg: 992px; 
+$xl: 1200px;
+$xxl: 1400px;
+// ----------------Mixin----------------
+@mixin text($fs: $text-base, $fw: $text-regular, $fc: $text-c1-dark) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc;
+};
+
+@mixin res-sm { @media (max-width: #{$sm}) {     
+  @content;   
+ } 
+}  
+
+@mixin res-md {  @media (max-width: #{$md}) {     
+    @content;  
+   } 
+  }  
+@mixin res-lg {  @media (max-width: #{$lg}) {     
+    @content;  
+   } 
+  } 
+@mixin res-xl {  @media (max-width: #{$xl}) {     
+    @content;  
+   } 
+  }
+
+@mixin res-xxl { @media (max-width: #{$xxl}) {     
+  @content;  
+ } 
+}

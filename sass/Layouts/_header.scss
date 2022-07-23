@@ -1,0 +1,52 @@
+header{
+        .login-bar{
+            padding: 10px 25px;
+            background-color: $bg-c1-dark;
+            .logo{
+                img{
+
+                }
+            }
+            .right-wrap{
+                .cart{
+                    margin-right: 0.5rem;
+                    img{
+
+                    }
+                    span{
+                        @include text($text-3xl,$text-light,$text-c1-light);
+                        line-height: 1
+                    }
+                }
+                a{
+                    @include text(1rem,$text-light,$text-c1-light);
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+        .navbar{
+            padding:0 25px;
+            .navbar-toggler{
+                .navbar-toggler-icon{
+
+                }
+            }
+            #navbarNavAltMarkup{
+                .navbar-nav{
+                  .nav-link{
+                    @include text($text-2xl,$text-regular,$text-c2-dark);
+                    line-height: 1;
+                    padding: 15px 0;
+                    margin-left: 1.5rem;
+                    &:first-child{
+                        margin: 0;
+                    }
+                    &.active{
+                        border-bottom: 1px solid $bg-c1-dark;
+                        color: $text-c1-dark;
+                    }
+                  }  
+                }
+            }
+        }
+}
