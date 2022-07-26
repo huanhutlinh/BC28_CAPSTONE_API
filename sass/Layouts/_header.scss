@@ -21,6 +21,9 @@ header{
                 a{
                     @include text(1rem,$text-light,$text-c1-light);
                     margin-right: 1.5rem;
+                    @include res-md{
+                        margin-right: 0.5rem;
+                    }
                 }
             }
         }
