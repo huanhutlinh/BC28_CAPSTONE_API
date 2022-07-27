@@ -190,7 +190,6 @@ footer .bg-wrap .container .row .col-item .col-content .footer-link:hover {
 
 .carousel .carousel-inner .carousel-item .slide-wrap {
   position: relative;
-  max-height: 500px;
   padding: 0 0 6rem;
 }
 @media (max-width: 768px) {
@@ -274,12 +273,24 @@ footer .bg-wrap .container .row .col-item .col-content .footer-link:hover {
   font-weight: 300;
   color: #000;
   margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .feature .container .products-list .row .col-item .product-card .card-body p {
   font-size: 20px;
   font-weight: 300;
   color: #CBC9C9;
   margin-bottom: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .feature .container .products-list .row .col-item .product-card .card-body .price-wrap {
   background-color: #ececec;
@@ -298,4 +309,7 @@ footer .bg-wrap .container .row .col-item .col-content .footer-link:hover {
   color: #000;
   text-align: center;
   flex: 1;
+}
+.feature .container #add-more-btn {
+  padding: 15px 20px;
 }

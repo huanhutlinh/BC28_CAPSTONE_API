@@ -118,7 +118,7 @@
         <div class="container">
             <h3 class="section-title">-Product Feature-</h3>
             <div class="products-list">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-xl-4 col-md-6 col-item">
                         <div class="product-card">
                             <div class="card-img">
@@ -222,8 +222,14 @@
                         </div>
                     </div>
                     
-                </div>
+                </div> -->
             </div>
+            <div class="text-center">
+                <a href="javascript:void(0)" class="btn-primary-cus" id="add-more-btn" onclick="getProductAPI(loadMoreItem)">
+                    <span>Add more</span>
+                </a>
+            </div>
+            
         </div>
 
     </section>
@@ -324,6 +330,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- My JS -->
+    <script src="../controllers/index.js"></script>
 </body>
 
 </html>
