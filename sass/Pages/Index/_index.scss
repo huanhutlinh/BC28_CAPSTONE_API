@@ -8,21 +8,22 @@
                 padding: 0 0 6rem;
 
                 .slide-content {
+                    padding: 25px;
                     @include res-md {
                         flex-flow: column;
                     }
 
                     .slide-left {
-                        width: 70%;
-                        padding-left: 86px;
+                        width: 60%;
 
                         @include res-md {
                             padding-left: 0;
                         }
 
                         .img-product {
+                            text-align: center;
                             img {
-                                width: 100%;
+                                width: 80%;
                                 object-fit: cover;
                                 object-position: center;
                             }
@@ -31,17 +32,32 @@
 
                     .slide-right {
                         flex: 1;
+                        @include res-md{
+                            text-align: center
+                        }
 
                         .product-detail {
                             h3 {
                                 @include text($text-4xl, $text-regular, $text-c1-dark);
-                                margin-bottom: 0;
+                                margin-bottom: 20px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                line-clamp: 1;
+                                -webkit-box-orient: vertical;
                             }
 
                             p {
-                                line-height: 1;
+                                line-height: 1.6;
                                 @include text($text-2xl, $text-light, $text-c1-dark);
                                 margin-bottom: 30px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                line-clamp: 2;
+                                -webkit-box-orient: vertical;
                             }
 
                             .btn-primary-cus {
