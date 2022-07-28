@@ -40,7 +40,7 @@ function loadInitialItems(arrProd) {
                                 <h3>${item.name}</h3>
                                 <p>${item.shortDescription}</p>
                                 <div class="d-flex price-wrap align-items-center">
-                                    <a href="#" class="btn-primary-cus">
+                                    <a href="../views/detail.html?id=${item.id}" class="btn-primary-cus">
                                         <span>Buy Now</span>
                                     </a>
                                     <span class="price">$${item.price}</span>
@@ -81,7 +81,7 @@ function loadMoreItem(arrProduct) {
                                 <h3>${item.name}</h3>
                                 <p>${item.shortDescription}</p>
                                 <div class="d-flex price-wrap align-items-center">
-                                    <a href="#" class="btn-primary-cus">
+                                    <a href="../views/detail.html?id=${item.id}" class="btn-primary-cus">
                                         <span>Buy Now</span>
                                     </a>
                                     <span class="price">$${item.price}</span>
@@ -127,7 +127,7 @@ function loadCarousel(arrProduct) {
                     <div class="product-detail">
                         <h3>${item.name}</h3>
                         <p>${item.description}</p>
-                        <a href="#" class="btn-primary-cus">
+                        <a href="../views/detail.html?id=${item.id}" class="btn-primary-cus">
                             <span>Buy Now</span>
                         </a>
                     </div>
