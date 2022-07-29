@@ -28,6 +28,10 @@ img {
   max-width: 100%;
 }
 
+p {
+  margin-bottom: unset;
+}
+
 .container {
   max-width: 100%;
   padding: 0 25px;
@@ -69,4 +73,58 @@ header .navbar #navbarNavAltMarkup .navbar-nav .nav-link:first-child {
 header .navbar #navbarNavAltMarkup .navbar-nav .nav-link.active {
   border-bottom: 1px solid #000;
   color: #000;
+}
+
+footer .bg-wrap {
+  padding: 2rem 0;
+}
+footer .bg-wrap:last-child {
+  background-color: #ececec;
+}
+footer .bg-wrap .container .row .col-item .col-content {
+  position: relative;
+}
+footer .bg-wrap .container .row .col-item .col-content::before {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  border: 1px solid #e2e2e2;
+  height: 100%;
+  top: 0;
+  left: -25px;
+}
+footer .bg-wrap .container .row .col-item .col-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+footer .bg-wrap .container .row .col-item .col-content .tags-list {
+  padding-bottom: 1rem;
+}
+footer .bg-wrap .container .row .col-item .col-content .tags-list .tag {
+  line-height: 1;
+  margin: 0.3rem 0;
+}
+footer .bg-wrap .container .row .col-item .col-content .tags-list .tag:first-child {
+  margin-top: 0;
+}
+footer .bg-wrap .container .row .col-item .col-content .tags-list .tag a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000;
+}
+footer .bg-wrap .container .row .col-item .col-content p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.25em;
+}
+footer .bg-wrap .container .row .col-item .col-content .footer-link {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #d46661;
+  transition: all 0.3s ease;
+}
+footer .bg-wrap .container .row .col-item .col-content .footer-link:hover {
+  color: #c43a33;
 }
