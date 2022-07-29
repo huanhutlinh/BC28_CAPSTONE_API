@@ -7,6 +7,9 @@ footer {
         .container {
             .row {
                 .col-item {
+                    @include res-md{
+                        margin-bottom: 1.5rem;
+                    }
                     .col-content {
                         position: relative;
                         &::before{
@@ -25,14 +28,23 @@ footer {
 
                         .tags-list {
                             padding-bottom: 1rem;
+                            @include res-md{
+                                padding-bottom: 0;
+                            }
                             .tag {
                                 &:first-child{
                                     margin-top: 0;
                                 }
                                 line-height: 1;
                                 margin: 0.3rem 0;
+                                // @include res-md{
+                                //     margin: 0.5rem 0;
+                                // }
                                 a {
                                     @include text(0.9rem,$text-regular,$text-c1-dark);
+                                    @include res-md{
+                                        margin: 0.5rem 0;
+                                    }
                                 }
                             }
                         }

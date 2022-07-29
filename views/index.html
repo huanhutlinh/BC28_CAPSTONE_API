@@ -52,11 +52,58 @@
             </div>
         </nav>
     </header>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section class="feature">
+        <div class="container">
+            <h3 class="section-title">-Product Feature-</h3>
+            <div class="products-list">
+                <!-- <div class="row">
+                    <div class="col-xl-4 col-md-6 col-item">
+                        <div class="product-card">
+                            <div class="card-img">
+                                <img src="../img/image 5.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h3>Adidas Prophere</h3>
+                                <p>short desc</p>
+                                <div class="d-flex price-wrap align-items-center">
+                                    <a href="#" class="btn-primary-cus">
+                                        <span>Buy Now</span>
+                                    </a>
+                                    <span class="price">$85</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div> -->
+            </div>
+            <div class="text-center">
+                <a href="javascript:void(0)" class="btn-primary-cus" id="add-more-btn" onclick="getProductAPI(loadMoreItem)">
+                    <span>Add more</span>
+                </a>
+            </div>
+            
+        </div>
+
+    </section>
     <footer>
         <div class="bg-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 col-item">
+                    <div class="col-md-4 col-item">
                         <div class="col-content">
                             <h3>GET HELP</h3>
                             <ul class="tags-list">
@@ -75,7 +122,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4 col-item">
+                    <div class="col-md-4 col-item">
                         <div class="col-content">
                             <h3>ODERS</h3>
                             <ul class="tags-list">
@@ -91,10 +138,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4 col-item">
+                    <div class="col-md-4 col-item">
                         <div class="col-content">
                             <h3>REGISTER</h3>
-                            <p>Create once account to manage every you do with Nike, from your shopping preferences to your Nike+ activity.</p>
+                            <p>Create once account to manage every you do with Nike, from your shopping preferences to
+                                your Nike+ activity.</p>
                             <a class="footer-link" href="#">
                                 Learn more
                             </a>
@@ -106,7 +154,7 @@
         <div class="bg-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 col-item">
+                    <div class="col-md-4 col-item">
                         <div class="col-content">
                             <h3>EMAIL SIGN UP</h3>
                             <p>Be the first to know about new products and special offers.</p>
@@ -115,7 +163,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-4 col-item">
+                    <div class="col-md-4 col-item">
                         <div class="col-content">
                             <h3>GIFT CARDS</h3>
                             <p>Give the gift that always fits.</p>
@@ -124,7 +172,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-4 col-item">
+                    <div class="col-md-4 col-item">
                         <div class="col-content">
                             <h3>STORES NEAR YOU</h3>
                             <p>Locate a Nike retail store or authorized retailer.</p>
@@ -148,6 +196,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- My JS -->
+    <script src="../controllers/index.js"></script>
 </body>
 
 </html>
