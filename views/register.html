@@ -64,9 +64,9 @@
                     <div class="col-6">
                         <div class="form-group form-left">
                             <input type="text" class="form-control mb-5 ml-30 col-10" placeholder="email" id="email">
-                            <input type="text" class="form-control mb-5 ml-30 col-10" placeholder="password"
+                            <input type="password" class="form-control mb-5 ml-30 col-10" placeholder="password"
                                 id="password">
-                            <input type="text" class="form-control mb-5 pl-30 col-10" placeholder="password confirm"
+                            <input type="password" class="form-control mb-5 pl-30 col-10" placeholder="password confirm"
                                 id="rePassword">
                         </div>
                     </div>
@@ -77,17 +77,15 @@
                             <div class="gender">
                                 <span>Gender</span>
                                 <div class="form-check form-check-inline ">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male"
-                                        value="option1">
-                                    <label class="form-check-label" for="male">Male</label>
+                                    <input class="form-check-input" type="radio" id="male" value="true" checked>
+                                    <label class="form-check-label">Male</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female"
-                                        value="option2">
-                                    <label class="form-check-label" for="female">Female</label>
+                                    <input class="form-check-input" type="radio" id="female" value="false">
+                                    <label class="form-check-label">Female</label>
                                 </div>
                             </div>
-                            <button type="submit" class="btnSubmit">Submit</button>
+                            <button class="btnSubmit" id="btnRegister">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -199,8 +197,11 @@
         integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- My JS -->
+    <!-- models -->
+    <script src="../models/InforUser.js"></script>
 
+    <!-- My JS -->
+    <script src="../controllers/register.js"></script>
 </body>
 
 </html>
