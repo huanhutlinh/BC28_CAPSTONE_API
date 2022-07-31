@@ -1,0 +1,87 @@
+// RESET
+@import '../../Base/reset';
+//variables
+@import '../../Helpers/variables';
+
+.detail {
+    margin: 50px 20px;
+
+    .container {
+        display: flex;
+
+        .product-card {
+            .card-img {
+                img {
+                    background-color: $bg-c2-light;
+                }
+            }
+        }
+
+        .product-content {
+            margin-left: 50px;
+
+            h3 {
+                @include text($text-3xl, $text-light, $text-c1-dark);
+            }
+
+            p {}
+
+            h5 {
+                @include text(24px, 500, #1ED90E);
+            }
+
+
+            .size {
+                display: flex;
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    margin: 5px;
+                    background-color: #CCCCCC;
+                    @include text(24px, $text-semibold, #1E1D1D)
+                }
+
+
+            }
+
+            .price {
+                @include text($text-3xl, $text-semibold, #FC0303);
+            }
+
+            .count {
+                display: flex;
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    margin: 5px;
+                    background-color: rgba(97, 129, 243, 1);
+                    @include text($text-3xl , $text-regular, #FFFCFC)
+                }
+
+                .number {
+                    background: none;
+                    @include text($text-3xl , $text-regular, $text-c1-dark)
+                }
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 175px;
+                height: 64px;
+                background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+                border: none;
+            }
+
+        }
+    }
+}

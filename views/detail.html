@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BC28 CAPSTONE API - DETAIL</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- My Css -->
+    <link rel="stylesheet" href="../css/main.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="login-bar d-flex justify-content-between ">
+            <div class="logo">
+                <img src="../img/image 3.png" alt="">
+            </div>
+            <div class="right-wrap d-flex align-items-center">
+                <span class="cart d-flex align-items-center">
+                    <img src="../img/image 8.png" alt="">
+                    <span>(1)</span>
+                </span>
+                <a href="#">Login</a>
+                <a href="./register.html">Register</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Men</a>
+                    <a class="nav-link" href="#">Women</a>
+                    <a class="nav-link" href="#">Kid</a>
+                    <a class="nav-link" href="#">Sport</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Details -->
+    <section class="detail">
+        <div class="container">
+            <div class="col-xl-4 col-md-6 col-item">
+                <div class="product-card">
+                    <div class="card-img">
+                        <img class="image" src="https://shop.cyberlearn.vn/images/adidas-prophere.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-xl-4 col-md-6 col-item"> -->
+            <div class="product-content">
+                <h3 class="name">adidas</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dicta, eos ratione
+                    ad eius
+                    doloribus debitis praesentium dolores possimus sequi placeat! Nisi ducimus recusandae beatae
+                    numquam dolorum vero dicta labore.</p>
+                <h5 class="mt-2">Available Size</h5>
+                <div class="size">
+                    <span>
+                        36
+                    </span>
+                    <span>
+                        37
+                    </span>
+                    <span>
+                        38
+                    </span>
+                    <span>
+                        39
+                    </span>
+                    <span>
+                        40
+                    </span>
+                </div>
+                <div class="price mx-2 my-2">85$</div>
+
+                <div class="count">
+                    <span>-</span>
+                    <span class="number">1</span>
+                    <span>+</span>
+                </div>
+
+                <button class="mt-2">Add to cart</button>
+            </div>
+            <!-- </div> -->
+        </div>
+    </section>
+    <!--  End Details -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="display:none;">
+        <div class="carousel-inner">
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section class="feature">
+        <div class="container">
+            <h3 class="section-title">-Product Feature-</h3>
+            <div class="products-list">
+                <!-- <div class="row">
+                    <div class="col-xl-4 col-md-6 col-item">
+                        <div class="product-card">
+                            <div class="card-img">
+                                <img src="../img/image 5.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h3>Adidas Prophere</h3>
+                                <p>short desc</p>
+                                <div class="d-flex price-wrap align-items-center">
+                                    <a href="#" class="btn-primary-cus">
+                                        <span>Buy Now</span>
+                                    </a>
+                                    <span class="price">$85</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div> -->
+            </div>
+            <div class="text-center">
+                <a href="javascript:void(0)" class="btn-primary-cus" id="add-more-btn"
+                    onclick="getProductAPI(loadMoreItem)">
+                    <span>Add more</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <div class="bg-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-item">
+                        <div class="col-content">
+                            <h3>GET HELP</h3>
+                            <ul class="tags-list">
+                                <li class="tag">
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li class="tag">
+                                    <a href="#">Shopping</a>
+                                </li>
+                                <li class="tag">
+                                    <a href="#">NIKEid</a>
+                                </li>
+                                <li class="tag">
+                                    <a href="#">Nike+</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-item">
+                        <div class="col-content">
+                            <h3>ODERS</h3>
+                            <ul class="tags-list">
+                                <li class="tag">
+                                    <a href="#">Payment options</a>
+                                </li>
+                                <li class="tag">
+                                    <a href="#">Shipping and Delivery</a>
+                                </li>
+                                <li class="tag">
+                                    <a href="#">Returns</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-item">
+                        <div class="col-content">
+                            <h3>REGISTER</h3>
+                            <p>Create once account to manage every you do with Nike, from your shopping preferences to
+                                your Nike+ activity.</p>
+                            <a class="footer-link" href="#">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-item">
+                        <div class="col-content">
+                            <h3>EMAIL SIGN UP</h3>
+                            <p>Be the first to know about new products and special offers.</p>
+                            <a class="footer-link" href="#">
+                                Sign up now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-item">
+                        <div class="col-content">
+                            <h3>GIFT CARDS</h3>
+                            <p>Give the gift that always fits.</p>
+                            <a class="footer-link" href="#">
+                                View cards
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-item">
+                        <div class="col-content">
+                            <h3>STORES NEAR YOU</h3>
+                            <p>Locate a Nike retail store or authorized retailer.</p>
+                            <a class="footer-link" href="#">
+                                Search
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- My JS -->
+    <script src="../controllers/index.js"></script>
+    <script src="../controllers/detail.js"></script>
+</body>
+
+</html>
