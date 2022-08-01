@@ -335,3 +335,203 @@ footer .bg-wrap .container .row .col-item .col-content .footer-link:hover {
 .feature .container #add-more-btn {
   padding: 15px 20px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  margin-bottom: unset;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: unset;
+}
+
+.register .container .title {
+  padding: 30px 0;
+}
+.register .container .title h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+}
+.register .container .form-register .form-left {
+  margin-left: 100px;
+}
+.register .container .form-register .form-left input {
+  border: none;
+  border-bottom: 5px solid #AE18E2;
+}
+.register .container .form-register .form-left ::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+}
+.register .container .form-register .form-right input {
+  border: none;
+  border-bottom: 5px solid #AE18E2;
+}
+.register .container .form-register .form-right .form-check-inline input[type=radio] {
+  -webkit-transform: scale(2);
+  outline: unset;
+  /* Chrome, Safari, Opera */
+}
+.register .container .form-register .form-right ::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  line-height: 36px;
+}
+.register .container .form-register .form-right .gender span {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  margin-right: 30px;
+}
+.register .container .form-register .form-right .gender .form-check-label {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+}
+.register .container .form-register .form-right .btnSubmit {
+  background: #AE18E2;
+  width: 291px;
+  height: 50px;
+  border: none;
+  margin-top: 95px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFCFC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  margin-bottom: unset;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: unset;
+}
+
+.detail {
+  margin: 50px 20px;
+}
+.detail .container {
+  display: flex;
+}
+.detail .container .product-card .card-img img {
+  background-color: #f8f8f8;
+}
+.detail .container .product-content {
+  margin-left: 50px;
+}
+.detail .container .product-content h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+}
+.detail .container .product-content h5 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ED90E;
+}
+.detail .container .product-content .size {
+  display: flex;
+}
+.detail .container .product-content .size span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #CCCCCC;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1E1D1D;
+}
+.detail .container .product-content .price {
+  font-size: 30px;
+  font-weight: 600;
+  color: #FC0303;
+}
+.detail .container .product-content .count {
+  display: flex;
+}
+.detail .container .product-content .count span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: rgb(97, 129, 243);
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFCFC;
+}
+.detail .container .product-content .count .number {
+  background: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+}
+.detail .container .product-content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 64px;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  border: none;
+}
