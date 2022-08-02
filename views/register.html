@@ -65,18 +65,23 @@
                 <div class="form-row">
                     <div class="col-6">
                         <div class="form-group form-left">
-                            <input type="text" class="form-control mb-5 ml-30 col-10" placeholder="email" id="email">
-                            <input type="password" class="form-control mb-5 ml-30 col-10" placeholder="password"
+                            <input type="text" class="form-control ml-30 col-10" placeholder="email" id="email">
+                            <p class="text-danger" id="emailVal"></p>
+                            <input type="password" class="form-control mt-5 ml-30 col-10" placeholder="password"
                                 id="password">
-                            <input type="password" class="form-control mb-5 pl-30 col-10" placeholder="password confirm"
+                            <p class="text-danger" id="pwdVal"></p>
+                            <input type="password" class="form-control mt-5 pl-30 col-10" placeholder="password confirm"
                                 id="rePassword">
+                            <p class="text-danger" id="rePwdVal"></p>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-group form-right">
-                            <input type="text" class="form-control  mb-5 col-10" placeholder="name" id="name">
-                            <input type="text" class="form-control  mb-5 col-10" placeholder="phone" id="phone">
-                            <div class="gender">
+                            <input type="text" class="form-control col-10" placeholder="name" id="name">
+                            <p class="text-danger" id="nameVal"></p>
+                            <input type="text" class="form-control  mt-5 col-10" placeholder="phone" id="phone">
+                            <p class="text-danger" id="phoneVal"></p>
+                            <div class="gender mt-5">
                                 <span>Gender</span>
                                 <div class="form-check form-check-inline ">
                                     <input class="form-check-input" type="radio" id="male" name="genderS" value="true"
@@ -205,7 +210,7 @@
     <script src="../models/InforUser.js"></script>
 
     <!-- My JS -->
-    <script src="../controllers/register.js"></script>
+    <script type="module" src="../controllers/register.js"></script>
 </body>
 
 </html>
