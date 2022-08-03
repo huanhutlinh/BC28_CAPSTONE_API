@@ -15,60 +15,68 @@
         }
 
         .form-register {
-            .form-left {
-                margin-left: 100px;
-
-                input {
-                    border: none;
-                    border-bottom: 5px solid $text-c1-purple;
+            .form-row{
+                @include res-md{
+                    flex-flow: nowrap column;
                 }
-
-                ::placeholder {
-                    @include text($text-3xl, $text-regular, $text-c1-dark);
-                }
-            }
-
-            .form-right {
-                input {
-                    border: none;
-                    border-bottom: 5px solid $text-c1-purple;
-                }
-
-                .form-check-inline {
-                    input[type=radio] {
-                        -webkit-transform: scale(2);
-                        outline: unset;
-                        /* Chrome, Safari, Opera */
+                .form-left {
+                    margin-left: 100px;
+                    @include res-lg{
+                        margin-left: 0;
+                        margin-bottom: 50px;
                     }
-                }
-
-                ::placeholder {
-                    @include text($text-3xl, $text-regular, $text-c1-dark);
-                    line-height: 36px;
-                }
-
-
-                .gender {
-                    span {
-                        @include text($text-3xl, $text-regular, $text-c1-dark);
-                        margin-right: 30px;
+                    input {
+                        border: none;
+                        border-bottom: 5px solid $text-c1-purple;
                     }
-
-                    .form-check-label {
-                        margin-left: 10px;
+    
+                    ::placeholder {
                         @include text($text-3xl, $text-regular, $text-c1-dark);
                     }
-
-
                 }
-
-                .btnSubmit {
-                    background: $text-c1-purple ;
-                    width: 291px;
-                    height: 50px;
-                    border: none;
-                    margin-top: 95px;
-                    @include text($text-3xl, $text-regular, #FFFCFC);
+    
+                .form-right {
+                    input {
+                        border: none;
+                        border-bottom: 5px solid $text-c1-purple;
+                    }
+    
+                    .form-check-inline {
+                        input[type=radio] {
+                            -webkit-transform: scale(2);
+                            outline: unset;
+                            /* Chrome, Safari, Opera */
+                        }
+                    }
+    
+                    ::placeholder {
+                        @include text($text-3xl, $text-regular, $text-c1-dark);
+                        line-height: 36px;
+                    }
+    
+    
+                    .gender {
+                        span {
+                            @include text($text-3xl, $text-regular, $text-c1-dark);
+                            margin-right: 30px;
+                        }
+    
+                        .form-check-label {
+                            margin-left: 10px;
+                            @include text($text-3xl, $text-regular, $text-c1-dark);
+                        }
+    
+    
+                    }
+    
+                    .btnSubmit {
+                        background: $text-c1-purple ;
+                        width: 291px;
+                        height: 50px;
+                        border: none;
+                        margin-top: 95px;
+                        @include text($text-3xl, $text-regular, #FFFCFC);
+                    }
                 }
             }
         }
