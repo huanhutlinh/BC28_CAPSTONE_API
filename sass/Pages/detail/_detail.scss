@@ -2,13 +2,14 @@
 @import '../../Base/reset';
 //variables
 @import '../../Helpers/variables';
-
 .detail {
     margin: 50px 20px;
 
     .container {
         display: flex;
-
+        @include res-md{
+            flex-flow: nowrap column;
+        }
         .product-card {
             .card-img {
                 img {
