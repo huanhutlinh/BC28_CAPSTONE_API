@@ -379,46 +379,57 @@ p {
   font-weight: 400;
   color: #000;
 }
-.register .container .form-register .form-left {
+@media (max-width: 768px) {
+  .register .container .form-register .form-row {
+    flex-flow: nowrap column;
+  }
+}
+.register .container .form-register .form-row .form-left {
   margin-left: 100px;
 }
-.register .container .form-register .form-left input {
+@media (max-width: 992px) {
+  .register .container .form-register .form-row .form-left {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+}
+.register .container .form-register .form-row .form-left input {
   border: none;
   border-bottom: 5px solid #AE18E2;
 }
-.register .container .form-register .form-left ::placeholder {
+.register .container .form-register .form-row .form-left ::placeholder {
   font-size: 30px;
   font-weight: 400;
   color: #000;
 }
-.register .container .form-register .form-right input {
+.register .container .form-register .form-row .form-right input {
   border: none;
   border-bottom: 5px solid #AE18E2;
 }
-.register .container .form-register .form-right .form-check-inline input[type=radio] {
+.register .container .form-register .form-row .form-right .form-check-inline input[type=radio] {
   -webkit-transform: scale(2);
   outline: unset;
   /* Chrome, Safari, Opera */
 }
-.register .container .form-register .form-right ::placeholder {
+.register .container .form-register .form-row .form-right ::placeholder {
   font-size: 30px;
   font-weight: 400;
   color: #000;
   line-height: 36px;
 }
-.register .container .form-register .form-right .gender span {
+.register .container .form-register .form-row .form-right .gender span {
   font-size: 30px;
   font-weight: 400;
   color: #000;
   margin-right: 30px;
 }
-.register .container .form-register .form-right .gender .form-check-label {
+.register .container .form-register .form-row .form-right .gender .form-check-label {
   margin-left: 10px;
   font-size: 30px;
   font-weight: 400;
   color: #000;
 }
-.register .container .form-register .form-right .btnSubmit {
+.register .container .form-register .form-row .form-right .btnSubmit {
   background: #AE18E2;
   width: 291px;
   height: 50px;
