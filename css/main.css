@@ -469,6 +469,11 @@ p {
 .detail .container {
   display: flex;
 }
+@media (max-width: 768px) {
+  .detail .container {
+    flex-flow: nowrap column;
+  }
+}
 .detail .container .product-card .card-img img {
   background-color: #f8f8f8;
 }
